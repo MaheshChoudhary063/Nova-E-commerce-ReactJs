@@ -20,8 +20,7 @@ const Navbar = () => {
 
 
   const navList = (
-    <ul className="flex space-x-3 text-white font-medium text-md px-5 ">
-
+    <ul className="flex space-x-3 text-navy-700 border-black  font-medium text-lg px-5 ">
       <li>
         <Link to={"/"}>Home</Link>
       </li>
@@ -29,7 +28,9 @@ const Navbar = () => {
       <li>
         <Link to={"/allproduct"}>All Product</Link>
       </li>
-
+      <li>
+        <Link to={"/contact"}>About Us</Link>
+      </li>
 
       {!user ? (
         <li>
@@ -39,7 +40,6 @@ const Navbar = () => {
         ""
       )}
 
-
       {!user ? (
         <li>
           <Link to={"/login"}>Login</Link>
@@ -48,20 +48,17 @@ const Navbar = () => {
         ""
       )}
 
-
       {user?.role === "user" && (
         <li>
           <Link to={"/user-dashboard"}>{user?.name}</Link>
         </li>
       )}
 
-
       {user?.role === "admin" && (
         <li>
           <Link to={"/admin-dashboard"}>Admin</Link>
         </li>
       )}
-
 
       {user && (
         <li className=" cursor-pointer" onClick={logout}>
@@ -75,23 +72,20 @@ const Navbar = () => {
     </ul>
   );
   return (
-    <nav style={{backgroundColor:"#0b0b0b"}} className="sticky top-0">
-
-      <div className="lg:flex lg:justify-between items-center py-3 lg:px-3 ">
-       
+    <nav
+      style={{ backgroundColor: "white", borderBottom: "1px solid black" }}
+      className="sticky top-0"
+    >
+      <div className="lg:flex lg:justify-between items-center py-5 lg:px-3">
         <div className="left py-3 lg:py-0">
           <Link to={"/"}>
-            <h2 className=" font-bold text-white text-2xl text-center">
+            <h2 className="font-bold text-blue-950 text-4xl text-center">
               Nova
             </h2>
           </Link>
         </div>
         <SearchBar />
-
-      
         <div className="right flex justify-center mb-4 lg:mb-0">{navList}</div>
-
-     
       </div>
     </nav>
   );

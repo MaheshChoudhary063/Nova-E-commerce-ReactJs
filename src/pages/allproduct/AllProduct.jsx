@@ -73,14 +73,14 @@ const AllProduct = () => {
                           {cartItems.some((p) => p.id === item.id) ? (
                             <button
                               onClick={() => deleteCart(item)}
-                              className="bg-black hover:bg-gray-800 w-full text-white py-[4px] rounded-lg font-bold"
+                              className="bg-blue-900 hover:bg-blue-800 w-full text-white py-[4px] rounded-lg font-bold"
                             >
                               Delete From Cart
                             </button>
                           ) : (
                             <button
                               onClick={() => addCart(item)}
-                              className=" bg-black hover:bg-gray-800 w-full text-white py-[4px] rounded-lg font-bold"
+                              className=" bg-blue-900 hover:bg-blue-800 w-full text-white py-[4px] rounded-lg font-bold"
                             >
                               Add To Cart
                             </button>

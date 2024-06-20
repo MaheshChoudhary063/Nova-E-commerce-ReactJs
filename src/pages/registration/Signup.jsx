@@ -77,10 +77,10 @@ const Signup = () => {
       <div className="flex justify-center items-center h-screen">
         {loading && <Loader />}
         {/* Login Form  */}
-        <div className="login_Form bg-gray-500 px-8 py-6 border border-pink-100 rounded-xl shadow-md">
+        <div className="login_Form bg-white px-8 py-6 border border-black rounded-xl shadow-md">
           {/* Top Heading  */}
           <div className="mb-5">
-            <h2 className="text-center text-2xl font-bold text-Black ">
+            <h2 className="text-center text-2xl font-bold text-blue-900 ">
               Signup
             </h2>
           </div>
@@ -97,7 +97,7 @@ const Signup = () => {
                   name: e.target.value,
                 });
               }}
-              className="bg-gray-500 border border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
+              className="bg-white border border-black px-2 py-2 w-96 rounded-md outline-none placeholder-blue"
             />
           </div>
 
@@ -113,7 +113,7 @@ const Signup = () => {
                   email: e.target.value,
                 });
               }}
-              className="bg-gray-500 border border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
+              className="bg-white border border-black px-2 py-2 w-96 rounded-md outline-none placeholder-blue"
             />
           </div>
 
@@ -129,7 +129,7 @@ const Signup = () => {
                   password: e.target.value,
                 });
               }}
-              className="bg-gray-500 border border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
+              className="bg-white border border-black px-2 py-2 w-96 rounded-md outline-none placeholder-blue"
             />
           </div>
 
@@ -138,7 +138,7 @@ const Signup = () => {
             <button
               type="button"
               onClick={userSignupFunction}
-              className="bg-black hover:bg-gray-800 w-full text-white text-center py-2 font-bold rounded-md "
+              className="bg-blue-900 hover:bg-blue-800 w-full text-white text-center py-2 font-bold rounded-md "
             >
               Signup
             </button>
@@ -147,7 +147,7 @@ const Signup = () => {
           <div>
             <h2 className="text-black">
               Have an account{" "}
-              <Link className=" text-black font-bold" to={"/login"}>
+              <Link className=" text-blue-900 font-bold" to={"/login"}>
                 Login
               </Link>
             </h2>

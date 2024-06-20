@@ -33,7 +33,7 @@ const ProductDetail = () => {
         <h1 className=" text-xl text-gray-900 font-bold">All Product</h1>
      
         <Link to={"/addproduct"}>
-          <button className="px-5 py-2 bg-gray-500 border border-black rounded-lg">
+          <button className="px-5 py-2 bg-blue-900  text-white border border-black rounded-lg">
             Add Product
           </button>
         </Link>

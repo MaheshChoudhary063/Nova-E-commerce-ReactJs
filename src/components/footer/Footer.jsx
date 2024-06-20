@@ -3,46 +3,40 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-     
       <footer
-        style={{ backgroundColor: "#0b0b0b" }}
+        style={{ backgroundColor: "bg-white" }}
         className="text-gray-600 body-font"
       >
-  
         <div className="container px-5 py-5 mx-auto flex items-center sm:flex-row flex-col">
-        
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <a className="flex title-font font-medium items-center md:justify-start justify-center dark:bg-navy-900">
             <span className="text-xl font-bold">Nova</span>
           </a>
-     
-          <p className="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+
+          <p className="text-sm dark:bg-navy-900 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             © 2024 Nova —
             <Link
               to={"/"}
-              className="text-gray-100 ml-1"
+              className="dark:bg-navy-900 ml-1"
               rel="noopener noreferrer"
               target="_blank"
             >
-              @maheshChoudhary
+              @maheshChoudhary 
             </Link>
           </p>
 
-         
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-     
             <a
               href="https://leetcode.com/mahesh_63/"
-              className="text-gray-100 cursor-pointer"
+              className="dark:bg-navy-900 cursor-pointer"
             >
               <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
                 <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm3.052 18.083H9.482l-1.115 1.306 3.273-8.634H8.085l3.417-4.202-1.19 9.836 2.74-6.383L14.435 21z" />
               </svg>
             </a>
 
-           
             <a
               href="https://github.com/MaheshChoudhary063"
-              class="ml-3 text-gray-100 cursor-pointer"
+              class="ml-3 dark:bg-navy-900 cursor-pointer"
             >
               <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
                 <path
@@ -53,10 +47,9 @@ const Footer = () => {
               </svg>
             </a>
 
-           
             <a
               href="https://www.instagram.com/maheshchoudharry/"
-              className="ml-3 text-gray-100 cursor-pointer"
+              className="ml-3 dark:bg-navy-900 cursor-pointer"
             >
               <svg
                 fill="none"
@@ -72,10 +65,9 @@ const Footer = () => {
               </svg>
             </a>
 
-            
             <a
               href="https://www.linkedin.com/in/mahesh-choudhary-2aa138243/"
-              className="ml-3 text-gray-100 cursor-pointer"
+              className="ml-3 dark:bg-navy-900 cursor-pointer"
             >
               <svg
                 fill="currentColor"

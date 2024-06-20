@@ -36,7 +36,7 @@ const HomePageProductCard = () => {
     <div className="mt-10">
      
       <div className="">
-        <h1 className=" text-center mb-5 text-2xl font-semibold">
+        <h1 className=" text-center mb-5 text-2xl font-semibold ">
           Bestselling Products
         </h1>
       </div>
@@ -72,14 +72,14 @@ const HomePageProductCard = () => {
                         {cartItems.some((p) => p.id === item.id) ? (
                           <button
                             onClick={() => deleteCart(item)}
-                            className=" bg-black hover:bg-gray-800 w-full text-white py-[4px] rounded-lg font-bold"
+                            className="bg-blue-900 hover:bg-blue-900 w-full text-white py-[4px] rounded-lg font-bold"
                           >
                             Delete From Cart
                           </button>
                         ) : (
                           <button
                             onClick={() => addCart(item)}
-                            className=" bg-black hover:bg-gray-800 w-full text-white py-[4px] rounded-lg font-bold"
+                            className="bg-blue-900 hover:bg-blue-900 w-full text-white py-[4px] rounded-lg font-bold"
                           >
                             Add To Cart
                           </button>

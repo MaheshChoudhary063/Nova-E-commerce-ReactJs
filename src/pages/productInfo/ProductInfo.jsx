@@ -86,7 +86,7 @@ const ProductInfo = () => {
                   <div className="w-full px-4 md:w-1/2">
                     <div className="lg:pl-20">
                       <div className="mb-6 ">
-                        <h2 className="max-w-xl mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-700 md:text-2xl dark:text-gray-300">
+                        <h2 className="max-w-xl mb-6 text-xl font-semibold leading-loose tracking-wide text-black md:text-2xl dark:text-gray-300">
                           {product?.title}
                         </h2>
                         <div className="flex flex-wrap items-center mb-6">
@@ -149,7 +149,7 @@ const ProductInfo = () => {
                             </li>
                           </ul>
                         </div>
-                        <p className="inline-block text-2xl font-semibold text-gray-700 dark:text-gray-400 ">
+                        <p className="inline-block text-2xl font-semibold text-black-700 dark:text-gray-400 ">
                           <span>₹ {product?.price}</span>
                         </p>
                       </div>
@@ -165,21 +165,21 @@ const ProductInfo = () => {
                         {cartItems.some((p) => p.id === product.id) ? (
                           <button
                             onClick={() => deleteCart(product)}
-                            className="w-full px-4 py-3 text-center text-white bg-black border border--600  hover:bbg-gray-800 hover:text-gray-100  rounded-xl"
+                            className="w-full px-4 py-3 text-center text-white bg-blue-900 border border--600  hover:bg-blue-800 hover:text-gray-100  rounded-xl"
                           >
                             Delete from cart
                           </button>
                         ) : (
                           <button
                             onClick={() => addCart(product)}
-                            className="w-full px-4 py-3 text-center text-white bg-gray-800 border border-pink-600  hover:bg-black hover:text-gray-100  rounded-xl"
+                            className="w-full px-4 py-3 text-center text-white bg-blue-900 border bg-blue-900  hover:bg-blue-800 hover:text-gray-100  rounded-xl"
                           >
                             Add to cart
                           </button>
                         )}
                       </div>
                       <div className="flex gap-4 mb-6">
-                        <button className="w-full px-4 py-3 text-center text-gray-100 bg-black border border-transparent dark:border-gray-700 hover:bg-gray-800 hover:text-white-700 hover:bg-pink-100 rounded-xl">
+                        <button className="w-full px-4 py-3 text-center text-gray-100 bg-blue-900 border border-transparent dark:bg-blue-900 hover:bg-blue-800 hover:text-white-700 hover:bg-blue-8 00 rounded-xl">
                           Buy Now
                         </button>
                       </div>

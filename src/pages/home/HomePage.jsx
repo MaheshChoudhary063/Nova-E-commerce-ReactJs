@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
       <Layout>
           <HeroSection />
-          <Category />
+          {/* <Category /> */}
           <HomePageProductCard />
         
 

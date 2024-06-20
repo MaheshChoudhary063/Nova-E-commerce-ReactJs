@@ -18,7 +18,7 @@ const UserDashboard = () => {
         {/* Top  */}
         <div className="top ">
           {/* main  */}
-          <div className=" bg-gray-500 py-5 rounded-xl border border-black">
+          <div className=" bg-white py-5 rounded-xl border border-black">
             {/* image  */}
             <div className="flex justify-center">
               <img
@@ -92,7 +92,7 @@ const UserDashboard = () => {
                           className="mt-5 flex flex-col overflow-hidden rounded-xl border border-black md:flex-row"
                         >
                           {/* main 3  */}
-                          <div className="w-full border-r border-black bg-gray-500 md:max-w-xs">
+                          <div className="w-full border-r border-black bg-white md:max-w-xs">
                             {/* left  */}
                             <div className="p-8">
                               <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-1">

@@ -13,9 +13,8 @@ const AdminDashboard = () => {
   return (
     <Layout>
       <div>
-     
         <div className="top mb-5 px-5 mt-5">
-          <div className=" bg-gray-500 py-5 border border-black rounded-lg">
+          <div className=" bg-white py-5 border border-black rounded-lg">
             <h1 className=" text-center text-2xl font-bold text-black">
               Admin Dashboard
             </h1>
@@ -23,38 +22,31 @@ const AdminDashboard = () => {
         </div>
 
         <div className="px-5">
-         
           <div className="mid mb-5">
-           
-            <div className=" bg-gray-500 py-5 rounded-xl border border-black">
-             
+            <div className=" bg-white py-5 rounded-xl border border-black">
               <div className="flex justify-center">
                 <img
                   src="https://cdn-icons-png.flaticon.com/128/2202/2202112.png"
                   alt=""
                 />
               </div>
-            
+
               <div className="">
-            
                 <h1 className=" text-center text-lg">
                   <span className=" font-bold">Name : </span>
                   {user?.name}
                 </h1>
 
-           
                 <h1 className=" text-center text-lg">
                   <span className=" font-bold">Email : </span>
                   {user?.email}
                 </h1>
 
-              
                 <h1 className=" text-center text-lg">
                   <span className=" font-bold">Date : </span>
                   {user?.date}
                 </h1>
 
-              
                 <h1 className=" text-center text-lg">
                   <span className=" font-bold">Role : </span>
                   {user?.role}
@@ -63,13 +55,11 @@ const AdminDashboard = () => {
             </div>
           </div>
 
-        
           <div className="">
             <Tabs>
               <TabList className="flex flex-wrap -m-4 text-center justify-center">
-           
                 <Tab className="p-4 md:w-1/3 sm:w-1/2 w-full cursor-pointer">
-                  <div className=" border bg-gray-500 hover:bg-gray-700 border-pink-100 px-4 py-3 rounded-xl">
+                  <div className=" border bg-white hover:bg-gray-200 border-black px-4 py-3 rounded-xl">
                     <div className="text-black w-12 h-12 mb-3 inline-block">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -99,9 +89,8 @@ const AdminDashboard = () => {
                   </div>
                 </Tab>
 
-           
                 <Tab className="p-4 md:w-1/4 sm:w-1/2 w-full cursor-pointer">
-                  <div className=" border bg-gray-500 hover:bg-gray-700 border-black px-4 py-3 rounded-xl">
+                  <div className=" border bg-white hover:bg-gray-200 border-black px-4 py-3 rounded-xl">
                     <div className="text-black w-12 h-12 mb-3 inline-block">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +120,7 @@ const AdminDashboard = () => {
                 </Tab>
 
                 <Tab className="p-4 md:w-1/3 sm:w-1/2 w-full cursor-pointer">
-                  <div className=" border bg-gray-500 hover:bg-gray-700 border-black px-4 py-3 rounded-xl">
+                  <div className=" border bg-white hover:bg-gray-200 border-black px-4 py-3 rounded-xl">
                     <div className="text-black w-12 h-12 mb-3 inline-block">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

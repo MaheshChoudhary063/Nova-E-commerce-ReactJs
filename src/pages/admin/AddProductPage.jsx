@@ -88,7 +88,7 @@ const AddProductPage = () => {
         <div className="flex justify-center items-center h-screen">
           {loading && <Loader />}
          
-          <div className="login_Form bg-gray-500 px-8 py-6 border border-black rounded-xl shadow-md">
+          <div className="login_Form bg-white px-8 py-6 border border-black rounded-xl shadow-md">
            
             <div className="mb-5">
               <h2 className="text-center text-2xl font-bold text-black ">
@@ -109,7 +109,7 @@ const AddProductPage = () => {
                   });
                 }}
                 placeholder="Product Title"
-                className="bg-gray-500 border text-black border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
+                className="bg-white border text-black border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
               />
             </div>
 
@@ -126,7 +126,7 @@ const AddProductPage = () => {
                   });
                 }}
                 placeholder="Product Price"
-                className="bg-gray-500 border text-black border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
+                className="bg-white border text-black border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
               />
             </div>
 
@@ -143,7 +143,7 @@ const AddProductPage = () => {
                   });
                 }}
                 placeholder="Product Image Url"
-                className="bg-gray-500 border text-black border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
+                className="bg-white border text-black border-black px-2 py-2 w-96 rounded-md outline-none placeholder-black"
               />
             </div>
 
@@ -157,7 +157,7 @@ const AddProductPage = () => {
                     category: e.target.value,
                   });
                 }}
-                className="w-full px-1 py-2 text-black bg-gray-500 border border-black rounded-md outline-none  "
+                className="w-full px-1 py-2 text-black bg-white border border-black rounded-md outline-none  "
               >
                 <option disabled>Select Product Category</option>
                 {categoryList.map((value, index) => {
@@ -188,7 +188,7 @@ const AddProductPage = () => {
                 name="description"
                 placeholder="Product Description"
                 rows="5"
-                className=" w-full px-2 py-1 text-black bg-gray-500 border border-black rounded-md outline-none placeholder-black "
+                className=" w-full px-2 py-1 text-black bg-white border border-black rounded-md outline-none placeholder-black "
               ></textarea>
             </div>
 
@@ -197,7 +197,7 @@ const AddProductPage = () => {
               <button
                 onClick={addProductFunction}
                 type="button"
-                className="bg-gray-900 hover:bg-gray-800 w-full text-white text-center py-2 font-bold rounded-md "
+                className="bg-blue-900 hover:bg-blue-800 w-full text-white text-center py-2 font-bold rounded-md "
               >
                 Add Product
               </button>
